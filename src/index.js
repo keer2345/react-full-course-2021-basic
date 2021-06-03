@@ -4,42 +4,40 @@ import ReactDom from 'react-dom'
 // CSS
 import './index.css'
 
-const firstBook = {
-  img: 'https://images-na.ssl-images-amazon.com/images/I/81eB%2B7%2BCkUL._AC_UL200_SR200,200_.jpg',
-  title: 'I Love You to the Moon and Back',
-  author: 'Amelia Hepworth'
-}
-const secondBook = {
-  img: 'https://images-na.ssl-images-amazon.com/images/I/71aLultW5EL._AC_UL200_SR200,200_.jpg',
-  title: 'Our Class is a Family',
-  author: 'Shannon Olsen'
-}
+const books = [
+  {
+    img: 'https://images-na.ssl-images-amazon.com/images/I/81eB%2B7%2BCkUL._AC_UL200_SR200,200_.jpg',
+    title: 'I Love You to the Moon and Back',
+    author: 'Amelia Hepworth'
+  },
+  {
+    img: 'https://images-na.ssl-images-amazon.com/images/I/71aLultW5EL._AC_UL200_SR200,200_.jpg',
+    title: 'Our Class is a Family',
+    author: 'Shannon Olsen'
+  },
+  {
+    img: 'https://images-na.ssl-images-amazon.com/images/I/71e5m7xQd0L._AC_UL200_SR200,200_.jpg',
+    title: 'The Vanishing Half: A Novel',
+    author: 'Brit Bennett'
+  }
+]
 
 const BookList = () => (
   <section className='booklist'>
-    <Book img={firstBook.img} title={firstBook.title} author={firstBook.author}>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quos
-        adipisci minus.
-      </p>
-    </Book>
-    <Book
-      img={secondBook.img}
-      title={secondBook.title}
-      author={secondBook.author}
-    />
+    {books.map((book) => {
+      return <Book book={book} />
+    })}
   </section>
 )
 
 const Book = (props) => {
-  const { img, title, author, children } = props
+  const { img, title, author } = props.book
 
   return (
     <article className='book'>
       <img src={img} alt='' />
       <h1>{title}</h1>
-      <h4>{author.toUpperCase()}</h4>
-      {children}
+      <h4>{author}</h4>
     </article>
   )
 }
