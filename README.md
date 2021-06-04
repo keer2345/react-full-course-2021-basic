@@ -1,9 +1,9 @@
 # React full course 2021 Basic
 
-| Project | Article |
+| Article | Project |
 |-------|---------|
-|[Github](https://github.com/keer2345/react-full-course-2021-basic/)  | [Basic](http://keer2345.github.io/2021/06/02/react-full-course-2021-basic)   |
-|[Github](https://github.com/keer2345/react-full-course-2021-advance/)| [Basic](http://keer2345.github.io/2021/06/02/react-full-course-2021-advance) |
+|[Basic](http://keer2345.github.io/2021/06/02/react-full-course-2021-basic)    | [Github ↗](https://github.com/keer2345/react-full-course-2021-basic/)  | 
+|[Advance](http://keer2345.github.io/2021/06/02/react-full-course-2021-advance)| [Github ↗](https://github.com/keer2345/react-full-course-2021-advance/)| 
 
 
 
